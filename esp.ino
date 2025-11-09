@@ -244,7 +244,7 @@ bool parseSensorData(String data) {
       : data.substring(p2Index + 3, end);
   }
 
-  // WwaktuP1
+  // WaktuP1
   int w1Index = data.indexOf("WP1:");
   if (w1Index != -1) {
     int end = data.indexOf(",", w1Index);
@@ -380,9 +380,9 @@ void updateSystemStatus() {
 
 void blinkLED(int times, int delayMs) {
   for (int i = 0; i < times; i++) {
-    digitalWrite(LED_BUILTIN_PIN, LOW);  // LED on
+    digitalWrite(LED_BUILTIN_PIN, LOW);  // LED ON
     delay(delayMs);
-    digitalWrite(LED_BUILTIN_PIN, HIGH);  // LED off
+    digitalWrite(LED_BUILTIN_PIN, HIGH);  // LED OFF
     if (i < times - 1) delay(delayMs);
   }
 }
