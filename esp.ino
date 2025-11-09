@@ -42,7 +42,6 @@ struct SystemStatus {
 } systemStatus;
 
 // Variable waktu
-unsigned long lastHeartbeat = 0;
 unsigned long lastDataCheck = 0;
 unsigned long lastStatsDisplay = 0;
 
